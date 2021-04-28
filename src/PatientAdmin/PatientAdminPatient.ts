@@ -4,5 +4,5 @@ export interface PatientAdminPatient extends Patient {
   Allergies?: Allergy[];
   Contacts?: Contact[];
   Diagnoses?: Diagnosis[];
-  PCP?: ProviderWithNPI[];
+  PCP?: ProviderWithNPI;
 }
