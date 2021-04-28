@@ -1,0 +1,57 @@
+{
+  "name": "@redox-contrib/models",
+  "version": "0.1.0",
+  "description": "Typescript definitions for the Redox API.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "keywords": [
+    "redox",
+    "redox engine",
+    "redoxengine"
+  ],
+  "author": "Jim Geurts <jim@biacreations.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redox-contrib/models.git"
+  },
+  "bugs": {
+    "url": "https://github.com/redox-contrib/models/issues"
+  },
+  "homepage": "https://github.com/redox-contrib/models#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^32.3.3",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-security": "^1.4.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
+    "pinst": "^2.1.6",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint --fix --ext .ts src",
+    "lint-staged": "lint-staged",
+    "dist": "if [ -d \"src\" ]; then rm -rf dist && npm run build && npm run lint && cp package.json dist && cp *.md dist && cp LICENSE dist && cp .npmignore dist && cd dist && npm publish --access public; fi",
+    "prepublishOnly": "if [ -d \"src\" ]; then echo \"Please use: npm run dist\" && exit 125; fi && pinst --disable",
+    "postinstall": "husky install",
+    "postpublish": "pinst --enable"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ],
+    "*.ts": [
+      "eslint --fix"
+    ]
+  }
+}
