@@ -1,8 +1,8 @@
 {
   "name": "@redox-contrib/models",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Typescript definitions for the Redox API.",
-  "main": "index.js",
+  "main": "",
   "types": "index.d.ts",
   "keywords": [
     "redox",
