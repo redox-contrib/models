@@ -1,4 +1,4 @@
-import type { Allergy, Contact, Diagnosis, Patient, ProviderWithNPI } from '..';
+import type { Allergy, Contact, Diagnosis, Patient, ProviderWithNPI } from '../common';
 
 export interface PatientAdminPatient extends Patient {
   Allergies?: Allergy[];

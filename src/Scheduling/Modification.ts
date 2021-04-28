@@ -1,4 +1,4 @@
-import type { CodeSetDescriptionWithValue, Meta, Patient } from '..';
+import type { CodeSetDescriptionWithValue, Meta, Patient } from '../common';
 
 import type { SchedulingVisit } from './SchedulingVisit';
 

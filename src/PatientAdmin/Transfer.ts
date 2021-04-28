@@ -1,4 +1,4 @@
-import type { DischargeStatus, Meta, VisitLocation } from '..';
+import type { DischargeStatus, Meta, VisitLocation } from '../common';
 
 import type { PatientAdminPatient } from './PatientAdminPatient';
 import type { PatientAdminVisit } from './PatientAdminVisit';

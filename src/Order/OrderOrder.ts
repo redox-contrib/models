@@ -1,4 +1,4 @@
-import type { Order, ClinicalInfo, Diagnosis } from '..';
+import type { Order, ClinicalInfo, Diagnosis } from '../common';
 
 export interface OrderOrder extends Order {
   ClinicalInfo?: ClinicalInfo[];

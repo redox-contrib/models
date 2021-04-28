@@ -1,4 +1,4 @@
-import type { Guarantor, Provider, Visit, Insurance } from '..';
+import type { Guarantor, Provider, Visit, Insurance } from '../common';
 
 export interface PatientAdminVisit extends Visit {
   AdmittingProvider?: Provider;

@@ -1,4 +1,4 @@
-import type { Equipment, Diagnosis, Provider, Staff, Visit } from '..';
+import type { Equipment, Diagnosis, Provider, Staff, Visit } from '../common';
 
 export interface SchedulingVisit extends Visit {
   AdditionalStaff?: Staff[];

@@ -1,4 +1,4 @@
-import type { Meta, Patient } from '..';
+import type { Meta, Patient } from '../common';
 
 import type { ResultsOrder } from './ResultsOrder';
 import type { ResultsVisit } from './ResultsVisit';

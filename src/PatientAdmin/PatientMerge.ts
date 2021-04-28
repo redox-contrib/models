@@ -1,4 +1,4 @@
-import type { Meta, Identifier } from '..';
+import type { Meta, Identifier } from '../common';
 
 import type { PatientAdminPatient } from './PatientAdminPatient';
 

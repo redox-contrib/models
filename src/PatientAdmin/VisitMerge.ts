@@ -1,4 +1,4 @@
-import type { Meta, Patient, Identifier } from '..';
+import type { Meta, Patient, Identifier } from '../common';
 
 export interface VisitMergeMeta extends Meta {
   DataModel: 'PatientAdmin';
